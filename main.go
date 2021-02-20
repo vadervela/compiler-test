@@ -1,7 +1,13 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	tt "github.com/vadervela/types-test/types"
+)
 
 func main() {
-	fmt.Println("hello server")
+	_ = tt.Test{}
+
+	fmt.Println("hello from compiler: depends on types")
 }
